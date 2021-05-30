@@ -15,7 +15,7 @@ FINS (Financial News Summarizer) is a system that intakes financial news article
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-FINS (Finacial News Summarizer) uses a combination of webscraping, extractive summarization and Flask-RESTful to create a simple api that summarizes financial news articles.  Extractive summarization works by assigning weights to the sentences through a series of tokenization.  This program is built to create summaries by only using sentences with a weighted score above three standard deviations from the mean weight, capturing only the most important content.
+FINS (Financial News Summarizer) uses a combination of webscraping, extractive summarization and Flask-RESTful to create a simple api that summarizes financial news articles.  Extractive summarization works by assigning weights to the sentences through a series of tokenization.  This program is built to create summaries by only using sentences with a weighted score above three standard deviations from the mean weight, capturing only the most important content.
 
 While this program can be used to summarize any text, it is specifically set up to scrape financial news from  reuters, cnbc, yahoo finance and marketwatch. The program targets a unique class for each news source to ensure that it is grabbing only the article text.  If a url outside of these sources is passed, the program will default to grabbing all of the paragraph tags in the article.  To start the API, simply run the api.py file and pass an encoded article url after the /fins/? route.  The api root page response has examples on how encode the url.  
 
